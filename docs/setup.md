@@ -5,14 +5,22 @@
 
 ## 2. NodeMCUのドライバをインストールする
 [このサイトからドライバをダウンロードして](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)インストールしてください。
+![image](https://github.com/Keio-AIConsortium/python-iot/assets/58695125/70139f70-5aa8-4985-9992-002f658cf5f1)
+
 
 ## 3. NodeMCUをPCに接続する
 NodeMCUをPCに接続してください。
 
 ## 4. インタプリタを指定する
+![image](https://github.com/Keio-AIConsortium/python-iot/assets/58695125/64b07f66-523a-4655-91d7-63fd51121dd2)
+
 Thonnyを起動し、ツールバーのOptiion→Interpreterを選択。
 一覧から"MicroPython (ESP8266)を選んでください。
 また、下の"Port or WebREPL"で、"CP210x UART Bridge~"を選択してください。
+
+## 5. エディタの設定
+以下の2項目にチェック
+![image](https://github.com/Keio-AIConsortium/python-iot/assets/58695125/d7bf9835-ae42-4fea-b494-22a2c048077a)
 
 以上で環境構築は終了です。
 必要に応じて言語、テーマ、フォントを設定してください。
