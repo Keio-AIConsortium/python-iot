@@ -3,13 +3,13 @@
 ## 1. Thonnyのインストール
 [このサイトからThonnyをダウンロードして](https://thonny.org/)インストールしてください。
 
-## 1. NodeMCUのドライバをインストールする
+## 2. NodeMCUのドライバをインストールする
 [このサイトからドライバをダウンロードして](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)インストールしてください。
 
-## 2. NodeMCUをPCに接続する
+## 3. NodeMCUをPCに接続する
 NodeMCUをPCに接続してください。
 
-## 3. インタプリタを指定する
+## 4. インタプリタを指定する
 Thonnyを起動し、ツールバーのOptiion→Interpreterを選択。
 一覧から"MicroPython (ESP8266)を選んでください。
 また、下の"Port or WebREPL"で、"CP210x UART Bridge~"を選択してください。
