@@ -1,6 +1,7 @@
 from machine import Pin, I2C
 from lcd import Lcd
 from time import sleep
+from esp_config import *
 
 lcd = Lcd()
 # SCL->D2, SDA->D1

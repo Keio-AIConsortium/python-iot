@@ -175,7 +175,7 @@ class IR_GET(IR_RX):
 #         pin = Pin('X3', Pin.IN)
 #     elif platform == 'esp8266':
 #         freq(160000000)
-#         pin = Pin(13, Pin.IN)
+#         pin = Pin(D7, Pin.IN)
 #     elif platform == 'esp32' or platform == 'esp32_LoBo':
 #         pin = Pin(23, Pin.IN)
 #     elif platform == 'rp2':

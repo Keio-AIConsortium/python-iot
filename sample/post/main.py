@@ -1,6 +1,7 @@
 import urequests
 import ujson
 from wifi import connect
+from esp_config import *
     
 if __name__ == "__main__":
     connect()

@@ -1,5 +1,6 @@
 from ssd1306 import SSD1306_I2C
 from machine import I2C, Pin
+from esp_config import *
 
 i2c = I2C(0, scl=Pin(18, Pin.OUT), sda=Pin(19, Pin.OUT),
           freq=400000)

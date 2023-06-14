@@ -1,5 +1,6 @@
 from machine import Pin, ADC
 from time import sleep
+from esp_config import *
 
 adc = ADC(0)
 

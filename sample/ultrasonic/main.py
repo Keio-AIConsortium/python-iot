@@ -1,8 +1,9 @@
 from machine import Pin
 import time
+from esp_config import *
 
-trig = Pin(2, Pin.OUT)
-echo = Pin(4, Pin.IN)
+trig = Pin(D4, Pin.OUT)
+echo = Pin(D2, Pin.IN)
 
 while True:
     trig.value(0)

@@ -1,7 +1,8 @@
 from machine import Pin, PWM
 from time import sleep
+from esp_config import *
 
-led = Pin(16, Pin.OUT)
+led = Pin(D2, Pin.OUT)
 pwm = PWM(led)
 
 while True:
