@@ -1,14 +1,26 @@
 from machine import Pin
 from time import sleep
 from esp_config import *
-from wifi import connect
 
 import urequests
 
-sunny = Pin(D6, Pin.OUT)
-cloudy = Pin(D7, Pin.OUT)
-rainy = Pin(D5, Pin.OUT)
+def connect():
+    import network
+    sta_if = network.WLAN(network.STA_IF)
+    if not sta_if.isconnected():
+        print('connecting to network...')
+        sta_if.active(True)
+        sta_if.connect('ssid', 'password')
+        while not sta_if.isconnected():
+            pass
+    print('network config:', sta_if.ifconfig())
+
+sunny = Pin(D5, Pin.OUT)
+cloudy = Pin(D6, Pin.OUT)
+rainy = Pin(D7, Pin.OUT)
+
 connect()
+
 while True:
     r = urequests.get('https://weather.tsukumijima.net/api/forecast?city=140010')
     j = r.json()
