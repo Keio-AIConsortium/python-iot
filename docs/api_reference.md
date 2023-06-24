@@ -39,7 +39,7 @@
 | 概要       | 現在の関東地方の鉄道路線の運行情報を提供します．                                                                                                                           |
 | API URL    | https://script.google.com/macros/s/AKfycbz1bKlQpnrxjo9dIZC0lIylyXgaZnZlVu4A9hU4X717M0K3tiAsfCRE4lFzpq43IMJX/exec                                                           |
 | 呼び出し方 | GET                                                                                                                                                                        |
-| パラメータ | URL末尾に `?name=路線名`の形で路線名を渡す．路線名は [Yahoo! 路線情報](https://transit.yahoo.co.jp/diainfo/area/4)のページに準拠する．[]や()野中まで一致させる必要がある． |
+| パラメータ | URL末尾に `?name=路線名`の形で路線名を渡す．路線名は [Yahoo! 路線情報](https://transit.yahoo.co.jp/diainfo/area/4)のページに準拠する．路線名の[]や()も含めて一致させる必要がある． |
 | 例         | `r = urequests.get('https://script.google.com/macros/s/AKfycbz1bKlQpnrxjo9dIZC0lIylyXgaZnZlVu4A9hU4X717M0K3tiAsfCRE4lFzpq43IMJX/exec?name=東急東横線')`                    |
 | 返り値     | 現在の運行情報のテキスト                                                                                                                                                   |
 | 情報提供元 | Yahoo! 路線情報 |
