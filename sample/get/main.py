@@ -1,4 +1,4 @@
-import ureqests
+import urequests
 from esp_config import *
 
 def do_connect():
