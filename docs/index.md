@@ -1,4 +1,4 @@
-# AIC春学期後半「PythonではじめるIoT」テキスト
+# AIC講習会「PythonではじめるIoT」テキスト
 スライドの要点・サンプルコードを掲載しています．適宜参考にしてください．  
 [サンプルコード](https://github.com/Keio-AIConsortium/python-iot/tree/main/sample)
 
