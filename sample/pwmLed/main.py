@@ -1,15 +1,13 @@
 from machine import Pin, PWM
 from time import sleep
-from esp_config import *
 
-led = Pin(D2, Pin.OUT)
+led = Pin(Pin.board.GP18, Pin.OUT)
 pwm = PWM(led)
 
 while True:
-    pwm.duty(1023)
+    pwm.duty_u16(65535)
     sleep(1)
-    pwm.duty(512)
+    pwm.duty_u16(10000)
     sleep(1)
-    pwm.duty(0)
+    pwm.duty_u16(0)
     sleep(1)
-    

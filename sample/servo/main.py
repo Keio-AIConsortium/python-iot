@@ -1,13 +1,13 @@
 from machine import Pin, PWM
 from time import sleep
-from esp_config import *
 
-servo = PWM(Pin(D1, Pin.OUT))
+pin = Pin(Pin.board.GP20, Pin.OUT)
+servo = PWM(pin)
 servo.freq(50)
 
 
 def servo_angle(angle):
-    servo.duty((123 - 26) * angle / 180 + 26)
+    servo.duty_ns((angle / 180 * (2200 - 500) + 500) * 1000)
 
 
 while True:

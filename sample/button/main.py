@@ -1,10 +1,8 @@
 from machine import Pin
 from time import sleep
-from esp_config import *
 
-button = Pin(D1, Pin.IN)
+button = Pin(Pin.board.GP15, Pin.IN, Pin.PULL_UP)
 
 while True:
-    print(f'Pin 10 is {button.value()}')
+    print(f'Pin GP15 is {button.value()}')
     sleep(0.1)
-
