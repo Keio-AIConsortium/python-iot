@@ -9,4 +9,6 @@ def do_connect():
             pass
     print('network config:', sta_if.ifconfig())
 
-do_connect()
+
+if __name__ == '__main__':
+    do_connect()
