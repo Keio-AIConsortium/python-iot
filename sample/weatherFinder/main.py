@@ -7,7 +7,7 @@ sunny = Pin(Pin.board.GP18, Pin.OUT)
 cloudy = Pin(Pin.board.GP19, Pin.OUT)
 rainy = Pin(Pin.board.GP20, Pin.OUT)
 
-do_connect()
+wifi.do_connect()
 
 while True:
     r = urequests.get(
@@ -32,4 +32,4 @@ while True:
         rainy.value(0)
         print("sunny")
 
-    sleep(1000)
+    sleep(1)
