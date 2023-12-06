@@ -1,11 +1,11 @@
 import urequests
 import ujson
-from wifi import connect
+import wifi
 from urllib import parse
 
 if __name__ == "__main__":
-    connect()
-    token = ''
+    wifi.do_connect()
+    token = 'ここにトークンを入力'
     msg = 'こんにちは！ PythonではじめるIoT'
 
     res = urequests.post('https://notify-api.line.me/api/notify',
