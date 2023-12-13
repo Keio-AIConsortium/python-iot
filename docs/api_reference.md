@@ -43,7 +43,7 @@
 
 |            |   |
 | ---------- | ----------- |
-| 概要       | 今日と明日の傘指数を5段階で返します． |
+| 概要       | 今日と明日の傘指数を返します． |
 | API URL    | <https://script.google.com/macros/s/AKfycbzozntf6PEFcqPlYrZU47sDXvQ8pm_hCvp5bU11HYj5XKAqYFp-BoivitqXshYv_mMFjA/exec> |
 | 呼び出し方 | GET |
 | パラメータ | URL末尾に `?r=3/17/4610/14100/` のようなパラメタを付与し地域を指定する．数字は tenki.jp の末尾のものに同じ．例: <https://tenki.jp/forecast/3/17/4610/14100/> であれば最後の"3/17/4610/14100/" を抜き取る． |
