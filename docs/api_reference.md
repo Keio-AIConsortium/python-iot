@@ -51,6 +51,18 @@
 | 返り値     | 今日，明日の順で値が格納されたlist|
 | 情報提供元 | tenki.jp|
 
+### スキー場情報API
+
+|            |   |
+| ---------- | ----------- |
+| 概要       | 今日と明日の天気，最高最低気温，降雪量を返します． |
+| API URL    | <https://script.google.com/macros/s/AKfycby-dXIsrAHL7fWX92a9SxQa1gEkpivLE63uqCdwi3NFWLcK_kAP46_cTW_ekWVFgaUMDQ/exec> |
+| 呼び出し方 | GET |
+| パラメータ | URL末尾に `?r=3/12/14411/` のようなパラメタを付与し地域を指定する．数字は tenki.jp の末尾のものに同じ．例: <https://tenki.jp/season/ski/3/12/14411/> であれば最後の"3/12/14411/" を抜き取る． |
+| 例         | `r = urequests.get('https://script.google.com/macros/s/AKfycby-dXIsrAHL7fWX92a9SxQa1gEkpivLE63uqCdwi3NFWLcK_kAP46_cTW_ekWVFgaUMDQ/exec?r=3/12/14411/')` |
+| 返り値     | `[ [ '晴のち曇', '晴' ], [ '1', '-4', '2', '-5' ], [ '0cm' ] ]`|
+| 情報提供元 | tenki.jp|
+
 
 ### 遅延情報API
 
