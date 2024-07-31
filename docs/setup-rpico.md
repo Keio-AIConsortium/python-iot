@@ -11,6 +11,7 @@
 - Micropico
 - Python
 - GitHub Copilot
+
  `Micropico` での例
 ![image](https://github.com/Keio-AIConsortium/python-iot/assets/58695125/fec2bc26-2d6d-4a7e-8f5c-cc86a3599a76)
 ほかの2つも同様にインストールしてください．
