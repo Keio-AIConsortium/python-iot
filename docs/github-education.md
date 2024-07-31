@@ -6,6 +6,7 @@
 - [公式ガイド](https://docs.github.com/ja/get-started/start-your-journey/creating-an-account-on-github)
 - [1分もかからない！5ステップでGitHubアカウント作成](https://reffect.co.jp/html/create_github_account_first_time)
 
+上記手順が終わったら，↓次へ進んでください
 ## 登録が終わった人 or すでにアカウントを持っている人はこちら
 ※途中の「How do you plan to use GitHub?」の欄にはGitHubの利用計画を英語で書きます．書く内容がない人は以下のパラグラフをコピペしても大丈夫です．
 ```
