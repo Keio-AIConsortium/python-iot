@@ -3,6 +3,7 @@
 **アカウントの登録には数日かかるため，講習会開始の5日前までには申請を完了させてください**
 
 ## GitHubアカウントを持っていない人はまずこちら（keio.jpのアドレスで登録してください）
+- [公式ガイド](https://docs.github.com/ja/get-started/start-your-journey/creating-an-account-on-github)
 - [1分もかからない！5ステップでGitHubアカウント作成](https://reffect.co.jp/html/create_github_account_first_time)
 
 ## 登録が終わった人 or すでにアカウントを持っている人はこちら
