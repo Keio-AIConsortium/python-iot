@@ -231,7 +231,7 @@ class Lcd(LcdApi):
 
     # Implements a HD44780 character LCD connected via PCF8574 on I2C
 
-    def __init__(self, i2c: I2C, i2c_addr=0x3f, num_lines=2, num_columns=16):
+    def __init__(self, i2c: I2C, i2c_addr=0x27, num_lines=2, num_columns=16):
         self.i2c = i2c
         self.i2c_addr = i2c_addr
         self.i2c.writeto(self.i2c_addr, bytes([0]))
