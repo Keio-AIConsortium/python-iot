@@ -1,18 +1,19 @@
-from machine import RTC
+from machine import Pin, RTC
+import tm1637
 import utime
-import ntptime
+import time
 
+seg = tm1637.TM1637(clk=Pin.board.GP0, dio=Pin.board.GP1) # clock display
 rtc = RTC()
-ntptime.settime()  # setup time by remote NTP server
 
-
+# 時刻を取得する関数
 def get_jst():
     tm = utime.localtime(utime.time())  # UTC now
-    jst = str(tm[0]) + '/' + str(tm[1]) + '/' + str(tm[2]) + ' ' + str(
-        (tm[3] + 9) % 24) + ':' + str(tm[4]) + ':' + str(tm[5])
-    return jst
-
+    time = ('0'+str(tm[3]))[-2:] + ('0'+str(tm[4]))[-2:]  # JST now
+    return time
 
 while True:
-    print(get_jst())
-    utime.sleep(1)
+    # 現在時刻を表示
+    seg.show(get_jst())
+    time.sleep(1)
+    
